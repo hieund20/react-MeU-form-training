@@ -5,6 +5,7 @@ function RequiredInvalidInput(props){
     const [inputContent, setInputContent] = useState(props.defaultValue);
     const [clickedElement, setClickedElement] = useState("");
 
+    //eslint-disable-next-line
     var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var contactRegex = /^\d{8,12}$/;
 
