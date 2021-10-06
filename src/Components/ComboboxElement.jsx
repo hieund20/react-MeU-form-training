@@ -6,6 +6,7 @@ function ComboboxElement(props) {
     let requiredClassName = 'field-error';
     let fieldClassName = 'field';
 
+    //Handle event when click on option of select component
     function handleClick(e){
         let contentValue = "";
 
@@ -24,6 +25,7 @@ function ComboboxElement(props) {
         setValue(contentValue);
     }
 
+    //Check valid gender
     function genderIsValid(){
         if(checkedValue === ""){       
             requiredClassName += ' active--';

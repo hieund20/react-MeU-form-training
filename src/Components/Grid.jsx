@@ -5,8 +5,9 @@ import RequiredInput from "./RequiredInput";
 import RequiredInvalidInput from "./RequiredInvalidInput";
 import ButtonElements from "./ButtonElements";
 
+//Container Component
 function Grid (){
-    //Giá trị mặc định khi chưa bấm EDIT là none để ẩn input
+    //none/'' value of display components
     const [displayMode, setDisplayMode] = useState('none');
 
     const [validName, setValidName] = useState('1');
@@ -14,12 +15,14 @@ function Grid (){
     const [validContact, setValidContact] = useState('1');
     const [validGender, setValidGender] = useState('1');
     const [validNotes, setValidNotes] = useState('1');
-    console.log('value name check ' + validName);
-    console.log('value mail check ' + validMail);
-    console.log('value contact check ' + validContact);
-    console.log('value gender check ' + validGender);
-    console.log('value notes check ' + validNotes);
-    console.log('----------------------------------');
+
+    //View log
+    // console.log('value name check ' + validName);
+    // console.log('value mail check ' + validMail);
+    // console.log('value contact check ' + validContact);
+    // console.log('value gender check ' + validGender);
+    // console.log('value notes check ' + validNotes);
+    // console.log('----------------------------------');
 
     const validForm = [
         validName, 
@@ -29,15 +32,13 @@ function Grid (){
         validNotes
     ];
 
+    //Check form is valid
     let formValidState = true;
     for(var i = 0; i < validForm.length; i++){
         if(validForm[i] === 0){
             formValidState = false;
         }    
     }
-
-    console.log(formValidState);
-
 
     return(
         <div className="grid">

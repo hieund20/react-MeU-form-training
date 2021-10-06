@@ -1,7 +1,7 @@
 import React from "react";
 import Grid from "./Grid";
 
-//Container nam trong header
+//Container component
 function FormContainer() {
     return(
         <div className="container">
